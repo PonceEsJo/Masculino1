@@ -1,0 +1,196 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #00264d, #004c99);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.flyer {
+  background: rgba(0, 28, 58, 0.95);
+  max-width: 1000px;
+  width: 95%;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.flyer-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.image-column {
+  margin: 0;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-column {
+  flex: 2;
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.logo {
+  height: 150px;
+}
+
+.fixed-logo {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  height: 150px;
+}
+
+.icono {
+  height: 150px;
+}
+
+.voley-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #FFD700;
+  font-size: 34px;
+  margin: 10px 0;
+  font-weight: 800;
+  z-index: 1;
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  color: #b0d4f1;
+  margin-bottom: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.highlight p {
+  background-color: #004080;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFDD00;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.requisitos, .contacto {
+  margin-bottom: 25px;
+}
+
+.requisitos h4, .contacto h4 {
+  color: #FFD700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  font-weight: 500;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.contacto a {
+  color: #91cfff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #003366;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFD700;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .flyer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-column {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .text-column {
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .icono {
+    height: 100px;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+}
+
+.footer:hover{
+  background-color: #004c99;
+  color: #ffffff;
+  transition: 0.5s;
+}
